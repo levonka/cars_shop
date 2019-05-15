@@ -1,0 +1,13 @@
+.edit_article-section {
+    margin-top: 150px;
+    min-height: calc(100vh - 333px);
+}
+
+.edit_article-section .edit_article-header {
+    font-size: 36px;
+}
+
+.edit-article span {
+    display: inline-block;
+    margin: 4px 0;
+}

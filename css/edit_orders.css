@@ -1,0 +1,36 @@
+.edit-orders-wrapper {
+    min-height: calc(100vh - 409px);
+}
+
+.edit-orders {
+    margin-top: 100px;
+}
+
+.order {
+    display: flex;
+    margin: 50px 0;
+    align-items: flex-start;
+}
+
+.order-block-info {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.order-block-car {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    min-width: 170px;
+}
+
+.order .delete_btn {
+    font-size: 40px;
+    margin-left: 12px;
+}
+
+.edit-article {
+    margin: 20px 0;
+}

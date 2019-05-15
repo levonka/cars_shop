@@ -1,0 +1,226 @@
+.catalog-wrapper {
+    min-height: calc(100vh - 268px);
+}
+
+.filter {
+    margin-top: 85px;
+    font-size: 36px;
+    padding: 10px;
+    background: white;
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 40px 0 0 0;
+}
+
+.filter-wrapper form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter-div {
+    /*margin: 0 20px;*/
+    margin-left: 60px;
+    font-size: 25px;
+}
+
+.filter-div p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.filter-wrapper form input[type="submit"] {
+    margin-left: 60px;
+    font-size: 20px;
+    color: black;
+    border: 1px solid #130e27;
+    width: 205px;
+    height: 49px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.filter-select {
+    font-size: 13px;
+    padding: 10px 8px 10px 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+    min-width: 100px;
+}
+
+.filter-div select {
+    /*width: 120%;*/
+}
+
+.filter-div select {
+    background: transparent;
+    line-height: 1;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    /*width: 120%;*/
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+}
+
+
+.filter-button:nth-child(1) {
+    margin-left: 30px;
+    border-left: 1px solid grey;
+}
+
+.filter-button {
+    font-size: 32px;
+    color: black;
+    padding: 2px 30px;
+    margin-bottom: 30px;
+    border-right: 1px solid grey;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    text-decoration: underline;
+}
+
+/* ============================ pricing begin */
+
+.pricing {
+    background: #efefef;
+    padding: 53px 0 40px 0;
+}
+
+.price-cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.pricing h2 {
+    margin: 0;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.price-card {
+    background: #fff;
+    padding: 22px 2% 20px 2%;;
+    border-radius: 5px 5px 0 0;
+    margin: 10px;
+    flex-basis: 43%;
+    display: flex;
+    justify-content: space-around;
+    min-height: 245px;
+}
+
+.price-card:hover {
+    box-shadow: 0 10px 50px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.price-cards .popular-item {
+    background: #fff url(../images/price-angle.png) no-repeat;
+}
+
+.price-cards .popular-item .button {
+    background: #c62314;
+}
+
+.price-cards .popular-item .button:hover {
+    background: #b43328;
+}
+
+.price-card .price-img {
+    width: 205px;
+    height: 154px;
+    background: white;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-size: contain;
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+
+.price-text {
+    margin-top: 20px;
+    width: 255px;
+}
+
+.price-text .mark {
+    font-size: 17px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.price-text .price {
+    display: inline-block;
+    font-size: 26px;
+    margin: 6px 0;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    padding: 3px 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+.price-card .button {
+    font-size: 20px;
+    background: #130e27;
+    color: #fff;
+    width: 205px;
+    height: 49px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.price-card .button:hover {
+    background: #231949;
+}
+
+.car {
+    margin: 0 auto;
+}
+
+.car th, .car td {
+    padding: 7px;
+}
+
+/* ============================ pricing end */
+
+@media screen and (max-width: 1150px) {
+    .price-cards {
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    .price-card {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        flex-basis: 70%;
+    }
+    .price-card:hover {
+        padding-bottom: 10px;
+    }
+    .price-cards .popular-item {
+        order: 1;
+    }
+}
